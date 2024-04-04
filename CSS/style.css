@@ -1,0 +1,236 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h2{
+	padding: 20px;
+}
+p{
+	padding: 20px;
+}
+#container{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 20px;
+	width: 900px;
+	padding-right: 50px;
+}
+body{
+	background-color: #353935;
+	overflow-x: hidden;
+	color: white;
+}
+img{
+	width: 200px;
+	height: 230px;
+	border: 1px;
+}
+h1{
+	color: yellow;
+	font-size: 60px;
+	padding: 20px;
+}
+nav{
+	background-color: yellow;
+	overflow: hidden;
+	height: 40px;
+	padding-top: 10px;
+}
+
+a{
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+}
+span{
+	color: yellow;
+}
+figcaption{
+	word-spacing: 30px;
+}
+.box1{
+	border: 2px solid white;
+	padding: 10px;
+	margin-bottom: 35px;
+	margin-right: 40px;
+}
+.box2{
+	border: 2px solid white;
+	padding: 10px;
+	margin-bottom: 35px;
+	margin-right: 40px;
+}
+.box3{
+	border: 2px solid white;
+	padding: 10px;
+	margin-bottom: 35px;
+}
+.box4{
+	border: 2px solid white;
+	padding: 10px;
+	margin-right: 40px;
+}
+.box5{
+	border: 2px solid white;
+	padding: 10px;
+	margin-right: 40px;
+}
+.box6{
+	border: 2px solid white;
+	padding: 10px;
+}
+.box7{
+	display: flex;
+}
+#container2{
+}
+#container3{
+width: 650px;
+ background-color: #818589;
+ padding: 20px;
+ color: white;
+}
+ul{
+	margin-left: 40px;
+}
+textarea{
+	background-color: #818589;
+	width: 200px;
+	height: 70px;
+}
+
+/*media query for media responsiveness*/
+@media screen and (min-width:320px) and (max-width:479px){
+	a{
+		display: none;
+	}
+	.box7{
+		display: block;
+
+	}
+	.box4,.box5{
+		margin-bottom: 30px;
+	}
+	#container > p{
+		width: 360px;
+		display: grid;
+	}
+	div#container{
+		display: grid;
+		grid-template-columns: 50%;
+		width: 100%;
+
+		
+		
+	}
+
+	#container{
+		margin: 20px;
+		width: 550px;
+	}
+	.box1,.box2,.box3,.box4,.box5,.box6{
+		width: 250px;
+	}
+
+.hamb{
+	cursor: pointer;
+	float: right;
+	padding: 10px;
+}
+.hamb-line{
+	background: white;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+.hamb-line::before, 
+.hamb-line::after{
+		background: white;
+		display: block;
+		content: '';
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		width: 100%;
+}
+.hamb-line::before{
+	top: 5px;
+}
+.hamb-line::after{
+	top: -5px;
+}
+nav{
+	width: 100%;
+	overflow-x: hidden;
+}
+}
+@media screen and (min-width:480px) and (max-width:768px){
+	.box7{
+		display: block;
+
+	}
+	div#container{
+		display: grid;
+		grid-template-columns: 50% 50%;
+		width: 100%;
+}
+	#container{
+		margin: 20px;
+		width: 550px;
+	}
+	.box3,.box6{
+		margin-right: 40px;
+	}
+	.box4{
+		margin-bottom: 35px;
+	}
+	img{
+		width: 100%;
+	}
+	#container3{
+		display: grid;
+		width: 100%;
+	}	
+nav{
+	overflow: hidden;
+
+}
+a{
+	display: none;
+}
+.hamb{
+	cursor: pointer;
+	float: right;
+	padding: 10px;
+}
+.hamb-line{
+	background: white;
+	display: block;
+	height: 2px;
+	position: relative;
+	width: 24px;
+}
+.hamb-line::before, 
+.hamb-line::after{
+		background: white;
+		display: block;
+		content: '';
+		height: 100%;
+		position: absolute;
+		transition: all .2s ease-out;
+		width: 100%;
+}
+.hamb-line::before{
+	top: 5px;
+}
+.hamb-line::after{
+	top: -5px;
+}
+#pic{
+	display: grid;
+	width: 300px;
+}
+
+}
