@@ -112,8 +112,8 @@ textarea{
 	.box4,.box5{
 		margin-bottom: 30px;
 	}
-	#container > p{
-		width: 360px;
+	#container{
+		overflow-x: hidden;
 		display: grid;
 	}
 	div#container{
